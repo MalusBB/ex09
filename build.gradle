@@ -15,7 +15,6 @@ plugins {
 
     id 'checkstyle'
 
-    id "com.github.spotbugs" version "1.6.9"
 }
 
 repositories {
@@ -36,9 +35,7 @@ checkstyle {
     configFile file("checkstyle.xml")
 }
 
-spotbugs {
-    ignoreFailures = false
-}
+
 
 jar {
     manifest {
